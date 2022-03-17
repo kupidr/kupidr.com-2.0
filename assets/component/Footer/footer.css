@@ -1,0 +1,46 @@
+/* start footer area */
+footer {
+  background-color: var(--dp1);
+}
+footer .top {
+  padding: 8rem 0;
+}
+footer .top h3 {
+  color: var(--org);
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 1rem;
+}
+footer .top a i {
+  transition: 0.5s;
+}
+footer .top a i:hover {
+  color: var(--org);
+}
+footer .top form input,
+footer .top form textarea {
+  background-color: transparent;
+  color: var(--org);
+}
+footer button[type="submit"] {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--org);
+  color: var(--white);
+  border: none;
+}
+footer .footer-end p a {
+  color: var(--org);
+}
+/* end footer area */
+
+@media screen and (max-width: 767px) {
+  footer .top {
+    padding: 5rem 0;
+  }
+  footer .top form {
+    margin-top: 2rem;
+  }
+  footer .footer-end p {
+    text-align: center !important;
+  }
+}
