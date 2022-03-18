@@ -1,6 +1,5 @@
 export default function () {
   let header = `
-<div class="shadow-sm">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -46,7 +45,6 @@ export default function () {
       </div>
     </div>
   </div>
-</div>
   `;
   document.querySelector("header").innerHTML = header;
 }
