@@ -1,0 +1,34 @@
+/* start header area */
+@media screen and (max-width: 991px) {
+  .navbar-light .navbar-toggler {
+    color: var(--org);
+    border-color: var(--org);
+  }
+  ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.3rem;
+    background-color: var(--org);
+    margin: 0 auto;
+    transition: 0.5s;
+  }
+}
+/* end header area */
+
+/* start footer area */
+@media screen and (max-width: 767px) {
+  footer .top {
+    padding: 5rem 0;
+  }
+  footer .top form {
+    margin-top: 2rem;
+  }
+  footer .top form button[type="submit"] {
+    width: 100%;
+  }
+  footer .footer-end p {
+    text-align: center !important;
+  }
+}
+/* end footer area */
