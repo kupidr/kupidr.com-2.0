@@ -54,6 +54,81 @@ ul li a {
   color: var(--org) !important;
 }
 /* end header area */
+/* start portfolio area */
+.portfolio > h2::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 25%;
+  background-color: var(--org);
+  margin: 10px auto;
+}
+.portfolio .item {
+  margin: 20px 10px;
+  padding: 10px;
+  background-color: var(--dp1);
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+}
+.portfolio .item:hover {
+  background-color: var(--black);
+}
+.portfolio .item .port-img {
+  height: 200px;
+  background-color: var(--org);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.portfolio .item .port-img:hover {
+  background-position: 0 100%;
+}
+.portfolio .item .default {
+  background-image: url(../portfolio_images/default.webp);
+}
+.portfolio .item .des {
+  padding: 10px 5px;
+}
+.portfolio .des h2 {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.portfolio .des p {
+  font-size: 0.8rem;
+  color: var(--org);
+  padding: 5px 0;
+  margin: 0;
+}
+.portfolio .item .port-link {
+  padding: 0 5px;
+}
+.portfolio .item .port-link a i {
+  font-size: 2rem;
+  color: var(--white);
+  transition: 0.5s;
+}
+.portfolio .item .port-link a i:hover {
+  color: var(--org);
+}
+
+/* start portfolio images link here */
+.portfolio .item .e-commerce-brand{
+  background-image: url(../portfolio_images/e-commerce-brand.webp);
+}
+.portfolio .item .creative-branding{
+  background-image: url(../portfolio_images/creative-branding.webp);
+}
+.portfolio .item .e-commerce-html-css {
+  background-image: url(../portfolio_images/e-commerce-html-css.webp);
+}
+.portfolio .item .cleaning-service {
+  background-image: url(../portfolio_images/cleaning-service.webp);
+}
+/* end portfolio images link here */
+/* end portfolio area */
+
 /* start footer area */
 footer {
   background-color: var(--dp1);
