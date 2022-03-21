@@ -54,6 +54,15 @@ ul li a {
   color: var(--org) !important;
 }
 /* end header area */
+
+/* start category area */
+.category-btn button.active {
+  font-weight: bold;
+  background-color: var(--org);
+  border: none;
+}
+/* end category area */
+
 /* start portfolio area */
 .portfolio > h2::after {
   content: "";
@@ -62,6 +71,14 @@ ul li a {
   width: 25%;
   background-color: var(--org);
   margin: 10px auto;
+}
+.portfolio > h2 span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: var(--dp1);
+  color: var(--white);
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 .portfolio .item {
   margin: 20px 10px;
@@ -114,10 +131,35 @@ ul li a {
 }
 
 /* start portfolio images link here */
-.portfolio .item .e-commerce-brand{
+
+.portfolio .item .innovated {
+  background-image: url(../portfolio_images/innovated.webp);
+}
+.portfolio .item .creative-learner {
+  background-image: url(../portfolio_images/creative-learner.webp);
+}
+.portfolio .item .everyday-dzo-06 {
+  background-image: url(../portfolio_images/everyday-dzo-06.webp);
+}
+.portfolio .item .nature-beauty-dzo-05 {
+  background-image: url(../portfolio_images/nature-beauty-dzo-05.webp);
+}
+.portfolio .item .Travel-Hunter-dzo-4 {
+  background-image: url(../portfolio_images/Travel-Hunter-dzo-4.webp);
+}
+.portfolio .item .elegance-dzo-3 {
+  background-image: url(../portfolio_images/elegance-dzo-3.webp);
+}
+.portfolio .item .pottery-studio-dzo-2 {
+  background-image: url(../portfolio_images/pottery-studio-dzo-2.webp);
+}
+.portfolio .item .fast-food-dzo-1 {
+  background-image: url(../portfolio_images/fast-food-dzo-1.webp);
+}
+.portfolio .item .e-commerce-brand {
   background-image: url(../portfolio_images/e-commerce-brand.webp);
 }
-.portfolio .item .creative-branding{
+.portfolio .item .creative-branding {
   background-image: url(../portfolio_images/creative-branding.webp);
 }
 .portfolio .item .e-commerce-html-css {

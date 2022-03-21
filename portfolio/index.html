@@ -75,18 +75,35 @@
           </div>
         </div>
       </div>
+    </header>
     <!-- end header area -->
+    <!-- start category button -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <section class="category-btn mt-2">
+            <button class="btn btn-secondary">All</button>
+            <button class="btn btn-secondary">CSS</button>
+            <button class="btn btn-secondary">Bootstrap</button>
+            <button class="btn btn-secondary">JavaScript</button>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- end category button -->
     <!-- start portfolio area -->
     <section class="portfolio">
       <!-- heading -->
-      <h2 class="text-center fst-italic my-5">portfolio</h2>
+      <h2 class="text-center fst-italic my-5">
+        portfolio <span id="total-project"></span>
+      </h2>
       <div class="container">
-        <div class="row">
+        <div class="row" id="all-items">
           <!-- portfolio item here -->
-          <!-- default -->
+          <!-- default
           <div class="col-lg-4 col-md-6">
             <div class="item">
-              <a href="#">
+              <a href="#" target="_blank">
                 <div class="port-img default"></div>
               </a>
               <div class="des">
@@ -106,26 +123,316 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- e-commerce-brand -->
+          </div> -->
+          <!-- innovated -->
           <div class="col-lg-4 col-md-6">
             <div class="item">
-              <a href="https://kupidr.github.io/e-commerce-brand">
-                <div class="port-img e-commerce-brand"></div>
+              <a href="https://kupidr.github.io/innovated" target="_blank">
+                <div class="port-img innovated"></div>
               </a>
               <div class="des">
-                <h2>E-commerce-brand</h2>
+                <h2>Innovated</h2>
                 <p>
-                  This is my portfolio project named E-commerce-brand. This project is created using HTML, CSS and SCSS.
+                  The Innovated beautiful web page layout using Bootstarp 5.
                 </p>
               </div>
               <div class="port-link">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
-                    <a href="https://kupidr.github.io/e-commerce-brand" target="_blank"><i class="fas fa-eye-slash"></i></a>
+                    <a href="https://kupidr.github.io/innovated" target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end">
-                    <a href="https://github.com/kupidr/e-commerce-brand" target="_blank"><i class="fab fa-github"></i></a>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/innovated.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- creative-learner -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a
+                href="https://kupidr.github.io/creative-learner"
+                target="_blank"
+              >
+                <div class="port-img creative-learner"></div>
+              </a>
+              <div class="des">
+                <h2>Creative Learner</h2>
+                <p>The Creative Learner web layout using Bootstarp 5.</p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/creative-learner"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/creative-learner.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- everyday-dzo-06 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a
+                href="https://kupidr.github.io/everyday-dzo-06"
+                target="_blank"
+              >
+                <div class="port-img everyday-dzo-06"></div>
+              </a>
+              <div class="des">
+                <h2>Everyday</h2>
+                <p>The beautiful one page web layout using HTML and CSS.</p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/everyday-dzo-06"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/everyday-dzo-06.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- nature-beauty-dzo-05 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a
+                href="https://kupidr.github.io/nature-beauty-dzo-05"
+                target="_blank"
+              >
+                <div class="port-img nature-beauty-dzo-05"></div>
+              </a>
+              <div class="des">
+                <h2>Nature Beauty</h2>
+                <p>Nature Beauty web layout using HTML and CSS.</p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/nature-beauty-dzo-05"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/nature-beauty-dzo-05.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Travel-Hunter-dzo-4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a
+                href="https://kupidr.github.io/Travel-Hunter-dzo-4"
+                target="_blank"
+              >
+                <div class="port-img Travel-Hunter-dzo-4"></div>
+              </a>
+              <div class="des">
+                <h2>Travel Hunter</h2>
+                <p>
+                  The beautiful Travel Hunter web layout using HTML and CSS.
+                </p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/Travel-Hunter-dzo-4"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/Travel-Hunter-dzo-4.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- elegance-dzo-3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a href="https://kupidr.github.io/elegance-dzo-3" target="_blank">
+                <div class="port-img elegance-dzo-3"></div>
+              </a>
+              <div class="des">
+                <h2>Elegance</h2>
+                <p>Elegance One page web layout using HTML and CSS.</p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/elegance-dzo-3"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/elegance-dzo-3.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pottery-studio-dzo-2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a
+                href="https://kupidr.github.io/pottery-studio-dzo-2"
+                target="_blank"
+              >
+                <div class="port-img pottery-studio-dzo-2"></div>
+              </a>
+              <div class="des">
+                <h2>Pottery Studio</h2>
+                <p>Pottery Studio layout using HTML and CSS.</p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/pottery-studio-dzo-2"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/pottery-studio-dzo-2.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fast-food-dzo-1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a
+                href="https://kupidr.github.io/fast-food-dzo-1"
+                target="_blank"
+              >
+                <div class="port-img fast-food-dzo-1"></div>
+              </a>
+              <div class="des">
+                <h2>Fast Food</h2>
+                <p>Fast Food one page web page layout using HTML and CSS.</p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/fast-food-dzo-1"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/fast-food-dzo-1.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- e-commerce-brand -->
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a
+                href="https://kupidr.github.io/e-commerce-brand"
+                target="_blank"
+              >
+                <div class="port-img e-commerce-brand"></div>
+              </a>
+              <div class="des">
+                <h2>E-commerce-brand</h2>
+                <p>
+                  This is my portfolio project named E-commerce-brand. This
+                  project is created using HTML, CSS and SCSS.
+                </p>
+              </div>
+              <div class="port-link">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                    <a
+                      href="https://kupidr.github.io/e-commerce-brand"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/e-commerce-brand"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -134,22 +441,36 @@
           <!-- creative-branding -->
           <div class="col-lg-4 col-md-6">
             <div class="item">
-              <a href="https://kupidr.github.io/creative-branding">
+              <a
+                href="https://kupidr.github.io/creative-branding"
+                target="_blank"
+              >
                 <div class="port-img creative-branding"></div>
               </a>
               <div class="des">
                 <h2>Creative-branding</h2>
                 <p>
-                  This is my portfolio project named Creative-branding. This project is created using HTML, CSS and SCSS.
+                  This is my portfolio project named Creative-branding. This
+                  project is created using HTML, CSS and SCSS.
                 </p>
               </div>
               <div class="port-link">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
-                    <a href="https://kupidr.github.io/creative-branding" target="_blank"><i class="fas fa-eye-slash"></i></a>
+                    <a
+                      href="https://kupidr.github.io/creative-branding"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end">
-                    <a href="https://github.com/kupidr/creative-branding" target="_blank"><i class="fab fa-github"></i></a>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/creative-branding"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -158,22 +479,33 @@
           <!-- e-commerce-html-css -->
           <div class="col-lg-4 col-md-6">
             <div class="item">
-              <a href="https://kupidr.github.io/e-commerce">
+              <a href="https://kupidr.github.io/e-commerce" target="_blank">
                 <div class="port-img e-commerce-html-css"></div>
               </a>
               <div class="des">
                 <h2>E-commerce</h2>
                 <p>
-                  This is my portfolio project named E-commerce. This project is created using HTML and CSS.
+                  This is my portfolio project named E-commerce. This project is
+                  created using HTML and CSS.
                 </p>
               </div>
               <div class="port-link">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
-                    <a href="https://kupidr.github.io/e-commerce" target="_blank"><i class="fas fa-eye-slash"></i></a>
+                    <a
+                      href="https://kupidr.github.io/e-commerce"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end">
-                    <a href="https://github.com/kupidr/e-commerce.git" target="_blank"><i class="fab fa-github"></i></a>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/e-commerce.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -182,7 +514,10 @@
           <!-- Cleaning Services -->
           <div class="col-lg-4 col-md-6">
             <div class="item">
-              <a href="https://kupidr.github.io/cleaning-service">
+              <a
+                href="https://kupidr.github.io/cleaning-service"
+                target="_blank"
+              >
                 <div class="port-img cleaning-service"></div>
               </a>
               <div class="des">
@@ -195,10 +530,20 @@
               <div class="port-link">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
-                    <a href="https://kupidr.github.io/cleaning-service" target="_blank"><i class="fas fa-eye-slash"></i></a>
+                    <a
+                      href="https://kupidr.github.io/cleaning-service"
+                      target="_blank"
+                      ><i class="fas fa-eye-slash"></i
+                    ></a>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end">
-                    <a href="https://github.com/kupidr/cleaning-service.git" target="_blank"><i class="fab fa-github"></i></a>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end"
+                  >
+                    <a
+                      href="https://github.com/kupidr/cleaning-service.git"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -236,5 +581,6 @@
     <!-- end body code here -->
     <!-- bootstrap 5 bundle js link -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
