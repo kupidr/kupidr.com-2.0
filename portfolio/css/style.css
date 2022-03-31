@@ -80,9 +80,9 @@ ul li a {
   padding: 2px 5px;
   border-radius: 5px;
 }
-#all-items > div{
+/* #all-items > div{
   display: none;
-}
+} */
 .portfolio .item {
   margin: 20px 10px;
   padding: 10px;
@@ -105,15 +105,15 @@ ul li a {
 .portfolio .item .port-img:hover {
   background-position: 0 100%;
 }
-.portfolio .item .default {
-  background-image: url(../portfolio_images/default.webp);
-}
 .portfolio .item .des {
   padding: 10px 5px;
 }
 .portfolio .des h2 {
   color: var(--white);
   font-size: 1.2rem;
+}
+.portfolio .des h2 span{
+  font-size: 10px;
 }
 .portfolio .des p {
   font-size: 0.8rem;
@@ -132,46 +132,6 @@ ul li a {
 .portfolio .item .port-link a i:hover {
   color: var(--org);
 }
-
-/* start portfolio images link here */
-
-.portfolio .item .innovated {
-  background-image: url(../portfolio_images/innovated.webp);
-}
-.portfolio .item .creative-learner {
-  background-image: url(../portfolio_images/creative-learner.webp);
-}
-.portfolio .item .everyday-dzo-06 {
-  background-image: url(../portfolio_images/everyday-dzo-06.webp);
-}
-.portfolio .item .nature-beauty-dzo-05 {
-  background-image: url(../portfolio_images/nature-beauty-dzo-05.webp);
-}
-.portfolio .item .Travel-Hunter-dzo-4 {
-  background-image: url(../portfolio_images/Travel-Hunter-dzo-4.webp);
-}
-.portfolio .item .elegance-dzo-3 {
-  background-image: url(../portfolio_images/elegance-dzo-3.webp);
-}
-.portfolio .item .pottery-studio-dzo-2 {
-  background-image: url(../portfolio_images/pottery-studio-dzo-2.webp);
-}
-.portfolio .item .fast-food-dzo-1 {
-  background-image: url(../portfolio_images/fast-food-dzo-1.webp);
-}
-.portfolio .item .e-commerce-brand {
-  background-image: url(../portfolio_images/e-commerce-brand.webp);
-}
-.portfolio .item .creative-branding {
-  background-image: url(../portfolio_images/creative-branding.webp);
-}
-.portfolio .item .e-commerce-html-css {
-  background-image: url(../portfolio_images/e-commerce-html-css.webp);
-}
-.portfolio .item .cleaning-service {
-  background-image: url(../portfolio_images/cleaning-service.webp);
-}
-/* end portfolio images link here */
 /* end portfolio area */
 
 /* start footer area */
