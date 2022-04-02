@@ -117,7 +117,8 @@ export default () => {
       id: 13,
       heading: "Planet",
       image: "planet.webp",
-      description: "Planet a beautiful e-commerce landing page using bootstrap 5.",
+      description:
+        "Planet a beautiful e-commerce landing page using bootstrap 5.",
       using: "bs",
       liveLink: "https://kupidr.github.io/planet",
       sourceLink: "https://github.com/kupidr/planet.git",
@@ -143,7 +144,7 @@ export default () => {
     return b.id - a.id;
   });
   for (let i = 0; i < portfolioOne.length; i++) {
-    let item = portfolioOne[i]
+    let item = portfolioOne[i];
 
     let div = document.createElement("div");
     div.classList.add("col-lg-4");
@@ -160,14 +161,12 @@ export default () => {
           <p>${item.description}</p>
         </div>
         <div class="port-link">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6">
+            <div>
               <a href="${item.liveLink}" target="_blank"><i class="fas fa-eye-slash"></i></a>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-md-6 col-sm-6 text-end">
+            <div class="text-end">
               <a href="${item.sourceLink}" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-          </div>
         </div>
       </div>`;
   }

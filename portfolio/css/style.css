@@ -126,6 +126,8 @@ ul li a {
 }
 .portfolio .item .port-link {
   padding: 0 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .portfolio .item .port-link a i {
   font-size: 2rem;

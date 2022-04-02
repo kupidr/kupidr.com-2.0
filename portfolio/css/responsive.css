@@ -13,11 +13,17 @@
     margin: 0 auto;
     transition: 0.5s;
   }
+  .portfolio > h2::after {
+    width: 50%;
+  }
 }
 /* end header area */
 
 /* start footer area */
 @media screen and (max-width: 767px) {
+  .portfolio > h2::after {
+    width: 80%;
+  }
   footer .footer-end p {
     text-align: center !important;
   }
