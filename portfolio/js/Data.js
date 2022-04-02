@@ -113,6 +113,15 @@ export default () => {
       liveLink: "https://kupidr.github.io/innovated",
       sourceLink: "https://github.com/kupidr/innovated.git",
     },
+    {
+      id: 13,
+      heading: "Planet",
+      image: "planet.webp",
+      description: "Planet a beautiful e-commerce landing page using bootstrap 5.",
+      using: "bs",
+      liveLink: "https://kupidr.github.io/planet",
+      sourceLink: "https://github.com/kupidr/planet.git",
+    },
   ];
   /*
 

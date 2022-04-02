@@ -37,6 +37,9 @@ ul li::after {
 ul li:hover::after {
   width: 100%;
 }
+ul li.ac-border::after {
+  width: 100%;
+}
 ul li a {
   text-transform: uppercase;
   color: var(--dp1) !important;
@@ -64,8 +67,64 @@ ul li a {
   background-color: var(--org);
 }
 /* end header area */
-/* strat services area  */
 
+/* start timeline area */
+section.timeline {
+}
+section.timeline .graphic,
+section.timeline .web-designer {
+  background-color: aliceblue;
+  margin: 4rem 0;
+  position: relative;
+  padding: 2rem 1rem;
+  border: 5px solid var(--dp1);
+  border-radius: 8px;
+}
+section.timeline .graphic i,
+section.timeline .web-designer i {
+  position: absolute;
+  top: -25%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%) rotate(0deg);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.4rem;
+  color: var(--org);
+  background-color: var(--dp1);
+  transition: 1s;
+}
+section.timeline .web-designer i {
+  padding: 1.3rem !important;
+}
+section.timeline .graphic:hover i,
+section.timeline .web-designer:hover i {
+  transform: translate(-50%) rotate(360deg);
+}
+section.timeline .graphic h2,
+section.timeline .web-designer h2 {
+  font-weight: bold;
+  color: var(--dp1);
+}
+section.timeline .graphic .year,
+section.timeline .web-designer .year {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -3.5rem;
+  padding: 0 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--org);
+  background-color: var(--dp1);
+}
+/* end timeline area */
+
+/* strat services area  */
 .services .icon-box {
   position: relative;
   display: block;
@@ -80,8 +139,16 @@ ul li a {
 
 .services .icon-box .icon {
   margin-bottom: 24px;
+  animation: example 4s infinite linear;
 }
-
+@keyframes example {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .services .icon-box:hover {
   z-index: 1;
   background-color: #fff;
@@ -169,10 +236,37 @@ footer .top form button[type="submit"] {
   border: none;
 }
 footer .footer-end {
+  position: relative;
   background-color: var(--white);
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 footer .footer-end p a {
   color: var(--org);
+}
+
+footer .footer-end .version-view i {
+  cursor: pointer;
+}
+footer .footer-end .website-versions {
+  display: none;
+  position: absolute;
+  right: 5%;
+  bottom: 105%;
+  width: 200px;
+  text-align: center;
+  padding: 1rem;
+  background: var(--black);
+  border: 2px solid var(--org);
+  border-radius: 8px;
+}
+footer .footer-end .website-versions a {
+  display: block;
+  background-color: var(--dp1);
+  color: var(--white);
+  text-decoration: none;
+}
+footer .footer-end .website-versions a:hover {
+  background-color: var(--org);
+  color: var(--white);
 }
 /* end footer area */

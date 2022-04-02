@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- title here -->
-    <title>Home | Kupdi R</title>
+    <title>Home | Kupdi R | Web Designer and Graphic Designer</title>
     <!-- favicon link -->
     <link
       rel="shortcut icon"
@@ -37,8 +37,8 @@
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="https://kupidr.com"
-                    ><img src="./assets/images/kupidr.svg" alt="" height="50"
+                  <a class="navbar-brand py-2" href="https://kupidr.com"
+                    ><img src="./assets/images/kupidr.svg" alt="" height="40"
                   /></a>
                   <button
                     class="navbar-toggler"
@@ -56,7 +56,7 @@
                     id="navbarSupportedContent"
                   >
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
+                      <li class="nav-item ac-border">
                         <a class="nav-link active" aria-current="page" href="/"
                           >Home</a
                         >
@@ -65,7 +65,7 @@
                         <a class="nav-link" href="/portfolio/">portfolio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="/blog/">blog</a>
                       </li>
                     </ul>
                   </div>
@@ -182,11 +182,41 @@
       </section>
     </header>
     <!-- end header area -->
-    <!-- strat services area -->
-    <section class="services">
-      <div class="container mt-5 mb-5">
+    <!-- start timeline area -->
+    <section class="timeline my-5">
+      <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-12 mt-3">
+          <div class="col-md-6">
+            <div class="graphic">
+              <i class="fas fa-paint-brush"></i>
+              <h2>Graphic Designer</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                amet deserunt saepe, quae dolorem quidem.
+              </p>
+              <div class="year">2021</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="web-designer">
+              <i class="fas fa-laptop-code"></i>
+              <h2>Web Designer</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                amet deserunt saepe, quae dolorem quidem.
+              </p>
+              <div class="year">2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end timeline area -->
+    <!-- strat services area -->
+    <section class="services my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 col-sm-12 mt-3">
             <div class="col max-mb-30 aos-init aos-animate" data-aos="fade-up">
               <a
                 href="#"
@@ -215,7 +245,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 mt-3">
+          <div class="col-xl-4 col-md-4 col-sm-12 mt-3">
             <div class="col max-mb-30 aos-init aos-animate" data-aos="fade-up">
               <a
                 href="#"
@@ -244,7 +274,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 mt-3">
+          <div class="col-xl-4 col-md-4 col-sm-12 mt-3">
             <div class="col max-mb-30 aos-init aos-animate" data-aos="fade-up">
               <a
                 href="#"
@@ -379,7 +409,8 @@
                 copyright &copy; 2022 by
                 <a
                   href="https://kupidr.com"
-                  class="text-decoration-none fw-bold" target="_blank"
+                  class="text-decoration-none fw-bold"
+                  target="_blank"
                   >Kupid R</a
                 >
               </p>
@@ -387,6 +418,12 @@
             <div class="col-md-6 col-sm-12">
               <p class="text-end">
                 <a href="#" class="text-decoration-none fw-bold">myPortfolio</a>
+                <span class="version-view">
+                  <i class="fas fa-code-branch text-dark ms-2"></i>
+                  <span class="website-versions">
+                    <a href="/v1/">Kupid R <span>v1</span></a>
+                  </span>
+                </span>
               </p>
             </div>
           </div>
@@ -397,5 +434,6 @@
     <!-- end body code here -->
     <!-- bootstrap 5 bundle js link -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
