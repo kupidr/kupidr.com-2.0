@@ -11,10 +11,10 @@ portfolioOne.sort(function (a, b) {
 /**
  * short the if in our code
  */
-
 // all items filtered here
 for (let i = 0; i < categoryBtn.length; i++) {
   categoryBtn[i].addEventListener("click", function () {
+    categoryBtn[i].classList.remove("active");
     if (i === 0) {
       totalProjectLength.innerHTML = "";
       allItems.innerHTML = "";
@@ -86,3 +86,17 @@ function itemOutput(items) {
         </div>`;
   }
 }
+function activeNavColor(e) {
+  // let topNav = e.children; // not use children because already use it
+  let topNav = e;
+  for (let i = 0; i < topNav.length; i++) {
+    topNav[i].addEventListener("click", function () {
+      for (let j = 0; j < topNav.length; j++) {
+        topNav[j].classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
+}
+// active category color
+activeNavColor(categoryBtn);
