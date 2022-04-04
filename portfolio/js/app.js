@@ -1,49 +1,88 @@
-import Data from "./Data.js";
-Data();
-let allItems = document.getElementById("all-items").children;
-
-// portfolio title and show total projects
+import { portfolioOne } from "./Data.js";
 let totalProjectLength = document.getElementById("total-project");
-totalProjectLength.innerHTML = `(${allItems.length})`;
+let allItems = document.getElementById("all-items");
+let categoryBtn = document.querySelector(".category-btn").children;
 
-// // filter portfolio
-// let filter_btn = document.querySelector(".category-btn").children;
-// let parent = document.getElementById("all-items").children;
-// for (let i = 0; i < filter_btn.length; i++) {
-//   filter_btn[i].addEventListener("click", function () {
-//     for (let j = 0; j < filter_btn.length; j++) {
-//       filter_btn[j].classList.remove("active");
-//     }
-//     this.classList.add("active");
-//     let target = this.getAttribute("data-target");
-//     for (let k = 0; k < parent.length; k++) {
-//       parent[k].style.display = "none";
-//       if (target == parent[k].getAttribute("data-id")) {
-//         parent[k].style.display = "block";
-//       }
-//       if (target == "all") {
-//         parent[k].style.display = "block";
-//       }
-//     }
-//   });
-// }
-/*
-// show more item here
-let showMore = document.querySelector(".show-portfoilo button");
-for (let i = 0; i < allItems.length; i++) {
-  if (i < 12) {
-    allItems[i].style.display = "block";
+// --------------------- data end and output creation ---------------------
+portfolioOne.sort(function (a, b) {
+  return b.id - a.id;
+});
+
+/**
+ * short the if in our code
+ */
+
+// all items filtered here
+for (let i = 0; i < categoryBtn.length; i++) {
+  categoryBtn[i].addEventListener("click", function () {
+    if (i === 0) {
+      totalProjectLength.innerHTML = "";
+      allItems.innerHTML = "";
+      itemOutput(portfolioOne);
+      totalProjectLength.innerHTML = `(${allItems.children.length})`;
+    }
+    if (i === 1) {
+      totalProjectLength.innerHTML = "";
+      allItems.innerHTML = "";
+      itemOutput(itemsFilter("css"));
+      totalProjectLength.innerHTML = `(${allItems.children.length})`;
+    }
+    if (i === 2) {
+      totalProjectLength.innerHTML = "";
+      allItems.innerHTML = "";
+      itemOutput(itemsFilter("sass"));
+      totalProjectLength.innerHTML = `(${allItems.children.length})`;
+    }
+    if (i === 3) {
+      totalProjectLength.innerHTML = "";
+      allItems.innerHTML = "";
+      itemOutput(itemsFilter("bs"));
+      totalProjectLength.innerHTML = `(${allItems.children.length})`;
+    }
+    if (i === 4) {
+      totalProjectLength.innerHTML = "";
+      allItems.innerHTML = "";
+      itemOutput(itemsFilter("js"));
+      totalProjectLength.innerHTML = `(${allItems.children.length})`;
+    }
+  });
+}
+// all items output here
+itemOutput(portfolioOne);
+totalProjectLength.innerHTML = `(${allItems.children.length})`;
+
+// all items filter category fun
+function itemsFilter(sass) {
+  return portfolioOne.filter((value) => {
+    return value.using === sass;
+  });
+}
+// item implement function here
+function itemOutput(items) {
+  for (let i = 0; i < items.length; i++) {
+    let item = items[i];
+    let div = document.createElement("div");
+    div.classList.add("col-lg-4");
+    div.classList.add("col-md-6");
+    div.setAttribute("id", item.using);
+    allItems.appendChild(div);
+    div.innerHTML = `
+        <div class="item">
+          <a href="${item.liveLink}" target="_blank">
+            <div class="port-img" style="background-image: url(./portfolio_images/${item.image})"></div>
+          </a>
+          <div class="des">
+            <h2>${item.heading} <span>${item.id}</span></h2>
+            <p>${item.description}</p>
+          </div>
+          <div class="port-link">
+              <div>
+                <a href="${item.liveLink}" target="_blank"><i class="fas fa-eye-slash"></i></a>
+              </div>
+              <div class="text-end">
+                <a href="${item.sourceLink}" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+          </div>
+        </div>`;
   }
 }
-currentItem = 12;
-showMore.onclick = () => {
-  let boxes = [...document.querySelectorAll("#all-items > div")];
-  for (let i = currentItem; i < currentItem + 12; i++) {
-    boxes[i].style.display = "block";
-  }
-  currentItem += 12;
-  if (currentItem >= boxes.length) {
-    showMore.style.display = "none";
-  }
-};
-*/
